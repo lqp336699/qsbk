@@ -19,8 +19,10 @@
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "内置组件",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"rgb(241,241,241)",
+				"backgroundColor":"rgb(241,241,241)"
             }
             
         }
@@ -33,12 +35,31 @@
             }
             
         }
+        ,{
+            "path" : "pages/home/video/video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "video",
+				"backgroundColor":"rgb(241,241,241)",
+				"navigationBarBackgroundColor":"rgb(241,241,241)"
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/map/map",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }       
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "百科",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "rgb(245,245,245)",
+		"backgroundColor": "rgb(245,245,245)"
 	},
 	"tabBar":{
 		"list":[{

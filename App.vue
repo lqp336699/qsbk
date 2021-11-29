@@ -13,7 +13,11 @@
 </script>
 
 <style>
-	@import url('common/common.css');
-	@import url('common/free.css');
+	@import url('common/uni.css');
 	@import url('common/iconfont/iconfont.css');
+	@import url('common/free.css');
+	@import url('common/common.css');
+	page{
+		background-color: rgb(245,245,245);
+	}
 </style>

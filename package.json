@@ -1,0 +1,22 @@
+{
+  "name": "qsbk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqp336699/qsbk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lqp336699/qsbk/issues"
+  },
+  "homepage": "https://github.com/lqp336699/qsbk#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
