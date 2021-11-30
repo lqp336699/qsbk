@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="">
 		 <scroll-view class="scroll-x" style="white-space:nowrap; line-height:80rpx;" scroll-with-animation="true" :scroll-into-view="scrollInto" scroll-x="true">
 		    <view class="item mr-5" v-for="(item,index) in tabBars" :id="item.id" @click="ontabtap" :key="item.id" :data-current="index">
 				<text :class="index == this.tabIndex ? 'active' : ''">
@@ -9,7 +9,7 @@
 		 </scroll-view>
 		 <swiper class="swiper" :current="tabIndex">
 		 	<swiper-item  v-for="item in tabBars">
-				<scroll-view scroll-y="true" class="" @scrolltolower="loadMore" style="height:85vh;" refresher-enabled="true" >
+				<scroll-view scroll-y="true" class="" @scrolltolower="loadMore" style="height:85vh;" >
 					<view v-for="(item,index1) in swipers" >
 						<lqpCard></lqpCard>
 					</view>
@@ -127,18 +127,29 @@
 	}
 	.scroll-x{
 		height:80rpx;
-		border-bottom:1px solid #ccc;
-		position:fixed;
-		top:80rpx;
 		background-color: #fff;
-		z-index:100;
+		border-bottom:1px solid #ccc;
+		width:100vw;
+		z-index:100;;
 	}
+	@media screen and (min-width: 1190px) {
+		.scroll-x{
+			top:100px;
+		}
+	}
+	@media screen and (max-width: 1190px) {
+		.scroll-x{
+			top:45px;
+			border: 1px solid #000;
+		}
+	}
+	
 	.active{
 		color:red;
 	}
 	.swiper{
 		height:100vh;
-		margin-top: 80rpx;
+		background-color: #fff;
 	}
 	
 </style>

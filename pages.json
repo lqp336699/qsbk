@@ -1,5 +1,24 @@
 {
+		"topWindow":{
+			"path":"windows/topWindows",
+			"style":{
+				"height":"55px"
+			},
+			"matchMedia": {
+			      "minWidth": 1190 //生效条件，当窗口宽度大于768px时显示
+			    }
+		},
+		"leftWindow":{
+			"path":"windows/leftWindows",
+			"style":{
+				"width":450
+			},
+			"matchMedia":{
+				"minWidth": 1190
+			}
+		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -10,8 +29,7 @@
             "path" : "pages/paper/paper",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "接口"
             }
             
         }
@@ -20,7 +38,6 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "内置组件",
-                "enablePullDownRefresh": false,
 				"navigationBarBackgroundColor":"rgb(241,241,241)",
 				"backgroundColor":"rgb(241,241,241)"
             }
@@ -30,8 +47,7 @@
             "path" : "pages/news/news",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": ""
             }
             
         }
@@ -49,8 +65,7 @@
             "path" : "pages/home/map/map",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": ""
             }
             
         }       
@@ -59,7 +74,12 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "百科",
 		"navigationBarBackgroundColor": "rgb(245,245,245)",
-		"backgroundColor": "rgb(245,245,245)"
+		"backgroundColor": "rgb(245,245,245)",
+		"h5": {
+			"maxWidth": 1190,
+			"navigationBarTextStyle": "black",
+			"navigationBarBackgroundColor": "#F1F1F1"
+		}
 	},
 	"tabBar":{
 		"list":[{
@@ -72,7 +92,7 @@
 			"pagePath":"pages/paper/paper",
 			"iconPath":"static/tabBar/seach.png",
 			"selectedIconPath":"static/tabBar/slectSeach.png",
-			"text":"糗事"
+			"text":"接口"
 		},
 		{
 			"pagePath":"pages/news/news",

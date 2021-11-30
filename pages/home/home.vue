@@ -1,13 +1,13 @@
 <template>
-	<view>
+	<view class="flex-1">
 		<view class=" mt-4 bg-white" v-for="(item,index) in list">
 			<view class="list flex align-center px-3 justify-between" :class="item.open?'active':''"  @click="changeCallapse(index,item.id)">
 				<text>{{item.title}}</text>
 				<text class="iconfont font-lg" v-if="!item.open">&#xeb04;</text>
 				<text class="iconfont font-lg" v-if="item.open">&#xeb03;</text>
 			</view>
-			<view v-if="item.open" v-for="(item1,index1) in item.pages">
-				<view class="list listItem flex align-center px-3 justify-between" @click="goPage(item1)">
+			<view v-if="item.open"  v-for="(item1,index1) in item.pages" >
+				<view class="list listItem flex align-center px-3 justify-between" :ref="detail"  @click="goPage(item1)">
 					<text>{{item1}}</text>
 					<text class="iconfont font-lg">&#xe8f1;</text>
 				</view>
@@ -54,6 +54,9 @@
 				]
 			}
 		},
+		created(e){
+			
+		},
 		methods: {
 			changeCallapse(index,id){
 				console.log(index)
@@ -67,12 +70,10 @@
 				}
 			},
 			goPage(item1){
-				console.log(item1)
-				let url = `${item1}/${item1}`
-				console.log(url)
+				let url = `./${item1}/${item1}`
 				uni.navigateTo({
-					url:url
-				})
+					{url:url}
+				});
 			}
 		}
 	}

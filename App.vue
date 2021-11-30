@@ -13,11 +13,25 @@
 </script>
 
 <style>
+	/* #ifdef APP-PLUS */
+	
+	/* #endif */
 	@import url('common/uni.css');
 	@import url('common/iconfont/iconfont.css');
 	@import url('common/free.css');
 	@import url('common/common.css');
-	page{
-		background-color: rgb(245,245,245);
+	@media screen and (min-width:  1180px){
+		page{
+			width:840px;
+			float:right;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.uni-app--showleftwindow + .uni-tabbar-bottom {
+		    display: none;
+		}
+		#app{
+			background-color: rgb(239,239,244);
+		}  
 	}
 </style>

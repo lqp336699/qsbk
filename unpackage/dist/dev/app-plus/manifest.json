@@ -40,7 +40,7 @@
     "statusbar": {
       "immersed": "supportedDevice",
       "style": "light",
-      "background": "#F8F8F8"
+      "background": "rgb(245,245,245)"
     },
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
@@ -113,7 +113,7 @@
           "pagePath": "pages/paper/paper",
           "iconPath": "/static/tabBar/seach.png",
           "selectedIconPath": "/static/tabBar/slectSeach.png",
-          "text": "糗事"
+          "text": "接口"
         },
         {
           "pagePath": "pages/news/news",
